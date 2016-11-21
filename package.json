@@ -1,0 +1,45 @@
+{
+  "name": "bloggify-sendgrid",
+  "description": "Bloggify plugin for sending emails via SendGrid.",
+  "keywords": [
+    "bloggify",
+    "sendgrid",
+    "plugin",
+    "for",
+    "sending",
+    "emails",
+    "via"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "files": [
+    "bin/",
+    "app/",
+    "public/",
+    "lib/",
+    "build/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "scripts/",
+    "cli.js",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/bloggify-sendgrid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/bloggify-sendgrid/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/bloggify-sendgrid#readme",
+  "dependencies": {
+    "sendgrid": "^4.7.1"
+  }
+}
