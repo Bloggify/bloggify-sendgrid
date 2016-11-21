@@ -33,12 +33,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/IonicaBizau/bloggify-sendgrid.git"
+    "url": "git+ssh://git@github.com/Bloggify/bloggify-sendgrid.git"
   },
   "bugs": {
-    "url": "https://github.com/IonicaBizau/bloggify-sendgrid/issues"
+    "url": "https://github.com/Bloggify/bloggify-sendgrid/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/bloggify-sendgrid#readme",
+  "homepage": "https://github.com/Bloggify/bloggify-sendgrid#readme",
   "dependencies": {
     "sendgrid": "^4.7.1"
   }

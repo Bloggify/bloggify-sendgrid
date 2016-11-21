@@ -2,13 +2,21 @@
 
 You can see below the API reference of this module.
 
-### `bloggifySendgrid(a, b)`
-Bloggify plugin for sending emails via SendGrid.
+### `send(data, cb)`
+Send an email.
 
 #### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
+- **Object** `data`: An object containing the following fields:
+ - `subject` (String): The email subject.
+ - `from_email` (String): The `from` email.
+ - `from_name` (String): The `from` name (optional).
+ - `to_email` (String): The `to` email.
+ - `to_name` (String): The `to` name (optional).
+ - `template_id` (String): The SendGrid template id.
+ - `substitutions` (Object): The template substitutions.
 
-#### Return
-- **Number** Return description.
+In the Bloggify config you will have to provide the following data:
+
+ - `key` (String): The SendGrid key.
+- **Function** `cb`: The callback function.
 

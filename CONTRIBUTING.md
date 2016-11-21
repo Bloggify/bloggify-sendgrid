@@ -61,6 +61,6 @@ Thanks! :sweat_smile:
 
 
 
-[1]: https://github.com/IonicaBizau/bloggify-sendgrid/issues
+[1]: https://github.com/Bloggify/bloggify-sendgrid/issues
 
 [2]: https://github.com/IonicaBizau/code-style

@@ -1,5 +1,15 @@
 "use strict";
 
-const bloggifySendgrid = require("../lib");
+const Email = Bloggify.require("bloggify-sendgrid", true);
 
-console.log(bloggifySendgrid());
+Email.send({
+    to_email: "someone@domain.com"
+  , from_email: "me@domain.com"
+  , subject: "Hello world!"
+  , template_id: "your template id"
+  , substitutions: {
+      "-name-": "Alice"
+    }
+}, (err, data) => {
+    console.log(err || data);
+});

@@ -17,23 +17,41 @@ $ npm i --save bloggify-sendgrid
 
 
 ```js
-const bloggifySendgrid = require("bloggify-sendgrid");
+const Email = Bloggify.require("bloggify-sendgrid", true);
 
-console.log(bloggifySendgrid());
+Email.send({
+    to_email: "someone@domain.com"
+  , from_email: "me@domain.com"
+  , subject: "Hello world!"
+  , template_id: "your template id"
+  , substitutions: {
+      "-name-": "Alice"
+    }
+}, (err, data) => {
+    console.log(err || data);
+});
 ```
 
 ## :memo: Documentation
 
 
-### `bloggifySendgrid(a, b)`
-Bloggify plugin for sending emails via SendGrid.
+### `send(data, cb)`
+Send an email.
 
 #### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
+- **Object** `data`: An object containing the following fields:
+ - `subject` (String): The email subject.
+ - `from_email` (String): The `from` email.
+ - `from_name` (String): The `from` name (optional).
+ - `to_email` (String): The `to` email.
+ - `to_name` (String): The `to` name (optional).
+ - `template_id` (String): The SendGrid template id.
+ - `substitutions` (Object): The template substitutions.
 
-#### Return
-- **Number** Return description.
+In the Bloggify config you will have to provide the following data:
+
+ - `key` (String): The SendGrid key.
+- **Function** `cb`: The callback function.
 
 
 
