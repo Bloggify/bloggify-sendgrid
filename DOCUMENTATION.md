@@ -2,6 +2,12 @@
 
 You can see below the API reference of this module.
 
+### `bloggify:init(config)`
+
+#### Params
+- **Object** `config`:
+  - `key` (String): The Sendgrid API key.
+
 ### `send(data, cb)`
 Send an email.
 
