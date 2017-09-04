@@ -2,9 +2,8 @@
 
 You can see below the API reference of this module.
 
-### `bloggify:init(config)`
+### Plugin Configuration
 
-#### Params
 - **Object** `config`:
   - `key` (String): The Sendgrid API key.
 
@@ -12,6 +11,7 @@ You can see below the API reference of this module.
 Send an email.
 
 #### Params
+
 - **Object** `data`: An object containing the following fields:
  - `subject` (String): The email subject.
  - `from_email` (String): The `from` email.
