@@ -17,6 +17,8 @@ Send an email.
  - `from_email` (String): The `from` email.
  - `from_name` (String): The `from` name (optional).
  - `to_email` (String): The `to` email.
+ - `bcc_email` (String): The `bcc` email.
+ - `cc_email` (String): The `cc` email.
  - `to_name` (String): The `to` name (optional).
  - `template_id` (String): The SendGrid template id.
  - `substitutions` (Object): The template substitutions.
