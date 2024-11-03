@@ -38,6 +38,6 @@
   },
   "homepage": "https://github.com/Bloggify/bloggify-sendgrid#readme",
   "dependencies": {
-    "@sendgrid/mail": "^6.3.1"
+    "@sendgrid/mail": "^8.1.4"
   }
 }
